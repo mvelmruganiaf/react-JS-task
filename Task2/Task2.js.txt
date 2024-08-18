@@ -1,0 +1,48 @@
+import React from "react";
+import img from "./images/login image2.png";
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import { Menu } from "./Menu";
+
+export function Task2(){
+    return(
+        <>
+        <Menu/> 
+        <center><h1>Task2</h1></center><br/><br/><br/>
+        <body className='background1'><br/><br/><br/>
+            <div>
+               <center><table className='background'>
+                    <tr>
+                        <th>
+                        <img className="image" src={img}/>
+                        </th>
+                        <th className="image1">
+              <Form>
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>Email address</Form.Label>
+        <Form.Control type="email" placeholder="Enter email" /><br/>
+        <Form.Text className="text-muted">
+          We'll never share your email with anyone else.
+        </Form.Text>
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Label>Password</Form.Label>
+        <Form.Control type="password" placeholder="Password" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+        <Form.Check type="checkbox" label="Check me out" />
+      </Form.Group>
+      <Button variant="warning" type="submit">
+        Submit
+      </Button>
+    </Form>
+    </th>
+    </tr>
+    </table>
+    </center> 
+            </div><br/><br/><br/>
+        </body>
+        </>
+    )
+}

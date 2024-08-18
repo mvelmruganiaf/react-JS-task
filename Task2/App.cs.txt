@@ -1,0 +1,40 @@
+.box{
+  width: 350px;
+  height: 60px;
+}
+
+.background{
+  background-color: rgb(60, 240, 15);
+  padding-top: 100px;
+  border-radius: 20px;
+}
+
+
+.image{
+  width: 400px;
+  height: 400px;
+}
+
+.table{
+  background-image: url('./Components/images/backgroundimage1.jpg');
+  padding-left: 100px;
+  width: 10px;
+}
+
+.image1{
+  background-color: blue;
+  width: 600px;
+  height: 400px;
+  padding-left: 60px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.background1{
+  background-color: rgb(212, 20, 161);
+  border-radius: 20px;
+}
+
+.background2{
+  background-color: rgb(43, 228, 11);
+}

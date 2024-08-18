@@ -1,0 +1,28 @@
+import React from "react";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { Link } from "react-router-dom";
+
+export function Menu(){
+    return(
+        <>
+         <Navbar bg="primary" data-bs-theme="dark">
+        <Container>
+          <Navbar.Brand href="#home">React-Task</Navbar.Brand>
+          <Nav className="me-auto">
+            <Link to={'/'}>
+            <Nav.Link href="#home">Task1</Nav.Link>
+            </Link>
+            <Link to={'Task2'}>
+            <Nav.Link href="#features">Task2</Nav.Link>
+            </Link>
+            <Link to={'Task3'}>
+            <Nav.Link href="#pricing">Task3</Nav.Link>
+            </Link>
+          </Nav>
+        </Container>
+      </Navbar>
+        </>
+    )
+}

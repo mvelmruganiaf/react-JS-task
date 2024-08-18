@@ -1,0 +1,21 @@
+import "./App.css";
+import { Task1 } from "./Components/Task1";
+import 'bootstrap/dist/css/bootstrap.css';
+import { Task2 } from "./Components/Task2";
+import { BrowserRouter, Routes ,Route } from 'react-router-dom';
+import { Task3 } from "./Components/Task3";
+
+export default function App()
+{
+return(
+  <>
+  <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Task1/>}/>
+      <Route path='/Task2' element={<Task2/>}/>
+      <Route path='/Task3' element={<Task3/>}/>
+    </Routes>
+    </BrowserRouter>
+  </>
+);
+};
